@@ -63,7 +63,6 @@ PBKDF2_ITERATIONS = 1000
 _worker_data = {}
 
 def init_worker(mode, zip_path, is_aes, sim_dict, stop_flag):
-    """Инициализация воркера - выполняется один раз при старте процесса"""
     _worker_data['mode'] = mode
     _worker_data['zip_path'] = zip_path
     _worker_data['is_aes'] = is_aes
@@ -357,3 +356,4 @@ def main():
 if __name__ == "__main__":
     multiprocessing.freeze_support()
     main()
+
